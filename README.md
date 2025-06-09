@@ -49,25 +49,35 @@ Selected **Annual Income (k$)** and **Spending Score (1-100)** for clustering.
 
 ---
 
-## 🛠️ Libraries Used
+## 📌 Feature Improvements (Planned)
 
-- `numpy`
-- `pandas`
-- `matplotlib`
-- `seaborn`
-- `sklearn.cluster.KMeans`
+To enhance the clustering model and increase its effectiveness, the following feature improvements are proposed:
+
+- 🔹 **Incorporate Age**: Adding customer age to the clustering features can reveal interesting patterns by combining age, income, and spending habits.
+  
+- 🔹 **Encode Gender**: Convert the categorical `Gender` column into a numerical feature (using Label Encoding or One-Hot Encoding) for more detailed segmentation.
+  
+- 🔹 **Include Geographical Data**: If location or region data is available, it can provide valuable context for cluster analysis.
+  
+- 🔹 **Create Derived Features**:
+  - **Spending per Income Ratio**: Derived by dividing spending score by annual income.
+  - **Age Group Category**: Bucket ages into groups (young adults, middle-aged, seniors) for better behavioral analysis.
+
+- 🔹 **Outlier Detection & Handling**: Identify and optionally remove outliers from income and spending score values to avoid cluster distortion.
+
+- 🔹 **Scaling & Normalization**: Apply scaling techniques like `StandardScaler` or `MinMaxScaler` on numerical data to bring all features to a comparable scale.
+
+
 
 ---
 
-## 📊 Example Visualization  
+## 📚 References
 
-![Cluster Plot Example](https://user-images.githubusercontent.com/placeholder-cluster-plot.png) <!-- optional if you want to add your own saved cluster image -->
+- [K-Means Clustering - Scikit-learn Documentation](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html)
+- [Mall Customer Segmentation Data - Kaggle](https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python)
 
 ---
 
-## 📌 How to Run
 
-1. Install required libraries (if not already):
 
-```bash
-pip install numpy pandas matplotlib seaborn scikit-learn
+
